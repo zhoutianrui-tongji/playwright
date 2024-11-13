@@ -27,9 +27,9 @@ def run(playwright):
     page.goto("https://1.tongji.edu.cn/questionnaireWriteOfStu")
 
     page.get_by_placeholder("用户名").click()
-    page.get_by_placeholder("用户名").fill("2311471")
+    page.get_by_placeholder("用户名").fill("学号")
     page.get_by_placeholder("口令").click()
-    page.get_by_placeholder("口令").fill("200073zhou")
+    page.get_by_placeholder("口令").fill("密码")
     page.get_by_role("button", name="Login").click()
 
     input("login")
